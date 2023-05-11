@@ -26,7 +26,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="/">Veterinaria Las Amigas</a>
+        <a class="navbar-brand" href="./index.html">Veterinaria Las Amigas</a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -42,28 +42,28 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/index.html"
+              <a class="nav-link js-scroll-trigger" href="./index.html" data-menu="inicio"
                 >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/nosotros.html"
+              <a class="nav-link js-scroll-trigger" href="./nosotros.html" data-menu="nosotros"
                 >Nosotros</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/tienda.html"
+              <a class="nav-link js-scroll-trigger" href="./tienda.html" data-menu="tienda"
                 >Tienda</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/donaciones.html"
+              <a class="nav-link js-scroll-trigger" href="./donaciones.html" data-menu="donaciones"
                 >Donaciones</a
               >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/contacto.html"
+              <a class="nav-link js-scroll-trigger" href="./contacto.html" data-menu="contacto"
                 >Contacto</a
               >
             </li>
@@ -72,7 +72,9 @@
       </div>
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="contenedor">
+
+    <div id="myCarousel" class="content carousel slide inicio" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -82,31 +84,31 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a class="carousel-link" href="/">
+          <a class="carousel-link" href="/" data-menu="inicio">
             <h4>Inicio</h4>
             <img src="imagenes/01.jpg" class="d-block w-100" alt="Imagen 1" />
           </a>
         </div>
         <div class="carousel-item">
-          <a class="carousel-link" href="/nosotros.html">
+          <a class="carousel-link" href="/nosotros.html" data-menu="nosotros">
             <h4>Nosotros</h4>
             <img src="imagenes/02.jpg" class="d-block w-100" alt="Imagen 2" />
           </a>
         </div>
         <div class="carousel-item">
-          <a class="carousel-link" href="/tienda.html">
+          <a class="carousel-link" href="/tienda.html" data-menu="tienda">
             <h4>Tienda</h4>
             <img src="imagenes/03.jpg" class="d-block w-100" alt="Imagen 3" />
           </a>
         </div>
         <div class="carousel-item">
-          <a class="carousel-link" href="/donaciones.html">
+          <a class="carousel-link" href="/donaciones.html" data-menu="donaciones">
             <h4>Donaciones</h4>
             <img src="imagenes/04.jpg" class="d-block w-100" alt="Imagen 4" />
           </a>
         </div>
         <div class="carousel-item">
-          <a class="carousel-link" href="/contacto.html">
+          <a class="carousel-link" href="/contacto.html" data-menu="contacto">
             <h4>Contacto</h4>
             <img src="imagenes/05.jpg" class="d-block w-100" alt="Imagen 5" />
           </a>
@@ -131,6 +133,142 @@
         <span class="sr-only">Siguiente</span>
       </a>
     </div>
+    <div class="content nosotros">
+      <main class="main">
+        <img src="imagenes/05.jpg" alt="imagen de gatitos" class="img-fluid" />
+        <h1>Acerca de Nosotros</h1>
+        <p>
+          Somos un grupo de veterinarios que se destaca por su gran vocación y
+          pasión por los animales. Este grupo está formado por profesionales
+          altamente capacitados, dedicados y comprometidos con el bienestar de los
+          animales y con una gran empatía hacia ellos. Nos esforzamos al máximo
+          para proporcionar los mejores cuidados a cada uno de los animales que
+          atendemos, ya fueran mascotas o animales de granja.Tenemos un gran
+          compromiso con el trabajo y nos tomamos el tiempo necesario para
+          escuchar a los dueños de los animales y entender las necesidades de cada
+          paciente. Además del compromiso con los animales, este grupo de
+          veterinarios también se preocupa por la educación y la prevención.Nos
+          tomamos el tiempo necesario para educar a los dueños de las mascotas
+          sobre cómo prevenir enfermedades y les damos consejos sobre cómo
+          mantener a sus animales en buena salud. Este grupo de veterinarios no
+          solo se preocupa por los animales que se atienden en la clinica, sino
+          que también nos dedicamos a realizar visitas a hogares de ancianos y
+          hospitales para llevar alegría a los pacientes a través de la
+          interacción con animales terapéuticos. En resumen, este grupo de
+          veterinarios destaca por su gran vocación y dedicación hacia los
+          animales, su compromiso con el bienestar animal, su empatía hacia los
+          dueños de las mascotas y su compromiso con la educación y prevención.
+        </p>
+      </main>
+    </div>
+    <div class="content tienda">
+      <main class="main">
+        <h1>Tienda</h1>
+        <p>Elige la sección para ver tus productos</p>
+        <section>
+          <ul class="tienda-listado">
+            <li class="tienda-item">
+              <a href="tienda/perros.html">
+                <span class="overlay">Perros</span>
+                <img src="imagenes/tienda/perros.jpg" alt="Perros" />
+              </a>
+            </li>
+            <li class="tienda-item">
+              <a href="tienda/gatos.html">
+                <span class="overlay">Gatos</span>
+                <img src="imagenes/tienda/gatos.jpg" alt="Gatos" />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <div class="content donaciones">
+      <main class="main">
+        <h1>Donaciones</h1>
+        <p>
+          Existen muchas fundaciones que pueden recibir tu dinero. Dona ahora!
+        </p>
+        <section>
+          <ul class="tienda-listado">
+            <li class="tienda-item">
+              <a href="https://chilemestizo.cl/" target="_blank">
+                <img src="imagenes/ong/chile-mestizo.png" />
+              </a>
+              <p>Fundación Chile Mestizo</p>
+            </li>
+            <li class="tienda-item">
+              <a href="https://galgos.cl/" target="_blank">
+                <img src="imagenes/ong/galgos.jpg" />
+              </a>
+              <p>Fundación Galgos Chile</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <div class="content contacto">
+      <main class="main">
+        <h1>Contacto</h1>
+        <p>Tienes alguna duda? Quieres ayudarnos? Contáctanos!!</p>
+        <section>
+          <form>
+            <div class="form-group">
+              <div class="field">
+                <label for="nombres">Nombres</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombres"
+                  placeholder="Juan"
+                />
+              </div>
+              <div class="field">
+                <label for="apellidos">Apellidos</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellidos"
+                  placeholder="Pérez López"
+                />
+              </div>
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  placeholder="9 9999 9999"
+                  pattern="[0-9]{1,2} [0-9]{4} [0-9]{4}"
+                />
+              </div>
+              <div class="field">
+                <label for="email">E-Mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="juanperez@gmail.com"
+                />
+              </div>
+              <div class="field">
+                <label for="ciudad">Ciudad</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ciudad"
+                  placeholder="Santiago"
+                />
+              </div>
+            </div>
+            <button class="button">Enviar</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(function () {
@@ -141,6 +279,12 @@
             $(".navbar").removeClass("fixed-top");
           }
         });
+        $("nav a").click(function(event){
+          event.preventDefault();
+          let menu = $(this).data("menu")
+          $(".content").hide()
+          $(".content."+menu).show()
+        })
       });
     </script>
   </body>
