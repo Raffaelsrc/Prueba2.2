@@ -98,3 +98,12 @@
   border-color: transparent;
   outline: none;
 }
+.content {
+  display: none;
+  padding-bottom: 80px;
+}
+
+ .content.inicio {
+  display: block;
+
+ }

@@ -26,7 +26,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="./index.html">Veterinaria Las Amigas</a>
+        <a class="navbar-brand" data-menu="inicio" href="./index.html">Veterinaria Las Amigas</a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -279,7 +279,7 @@
             $(".navbar").removeClass("fixed-top");
           }
         });
-        $("nav a").click(function(event){
+        $("nav a, #myCarousel .carousel-item a").click(function(event){
           event.preventDefault();
           let menu = $(this).data("menu")
           $(".content").hide()
