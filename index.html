@@ -305,6 +305,10 @@
               <button class="button" type="submit">Enviar</button>
             </form>
           </section>
+          <section id="mensaje-agradecimiento" style="display: none">
+            <h2>Gracias por enviar tus datos!</h2>
+            <p>Nos pondremos en contacto contigo lo antes posible.</p>
+          </section>
         </main>
       </div>
     </div>
@@ -324,6 +328,13 @@
           $(".content").hide();
           $(".content." + menu).show();
         });
+      });
+      const form = document.querySelector("form");
+      const mensaje = document.getElementById("mensaje-agradecimiento");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        mensaje.style.display = "block";
       });
     </script>
   </body>
