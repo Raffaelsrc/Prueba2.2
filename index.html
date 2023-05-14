@@ -301,6 +301,17 @@
                     required
                   />
                 </div>
+                <div class="field">
+                  <label for="comuna">Comuna *</label>
+                  <select
+                    id="comuna"
+                    name="comuna"
+                    class="form-control"
+                    required
+                  >
+                    <option value="">Selecciona una comuna</option>
+                  </select>
+                </div>
               </div>
               <button class="button" type="submit">Enviar</button>
             </form>
@@ -336,6 +347,27 @@
         event.preventDefault();
         mensaje.style.display = "block";
       });
+      function obtenerComunas() {
+        const apiKey = "tu-clave-de-api-aqui";
+        const apiUrl = `https://apis.digital.gob.cl/dpa/regiones/13/comunas?apikey=${apiKey}`;
+
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            const comunasSelect = document.getElementById("comunas");
+            data.forEach((comuna) => {
+              const option = document.createElement("option");
+              option.value = comuna.nombre;
+              option.text = comuna.nombre;
+              comunasSelect.appendChild(option);
+            });
+          })
+          .catch((error) => console.error(error));
+      }
+
+      window.onload = function () {
+        obtenerComunas();
+      };
     </script>
   </body>
 </html>
