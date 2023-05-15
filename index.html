@@ -394,6 +394,24 @@
       window.onload = function () {
         obtenerComunas();
       };
+
+      const boton = document.querySelector("#boton");
+
+      boton.addEventListener("click", () => {
+        console.log("El botón fue presionado");
+      });
+
+      const elemento = document.querySelector("#elemento");
+
+      elemento.addEventListener("mouseover", () => {
+        console.log("El mouse está sobre el elemento");
+      });
+
+      const element = document.querySelector("#element");
+
+      element.addEventListener("mouseout", () => {
+        console.log("El mouse dejó el elemento");
+      });
     </script>
   </body>
 </html>
